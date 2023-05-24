@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    background-color: aliceblue;
+}
+
+header #h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 20px 0;
+    animation: reng 5s infinite;
+    color: rgb(0, 238, 255);
+}
+
+@keyframes reng {
+    0% {
+        color: aliceblue;
+    }
+
+    50% {
+        color: rgb(3, 0, 32);
+    }
+
+    100% {
+        color: aliceblue;
+    }
+}
+
+header #ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+header #ul li {
+    display: flex;
+
+}
+
+header #ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(3, 0, 32);
+    font-size: 2rem;
+    padding: 15px 25px;
+    transition: color .3s;
+}
+
+header #ul li .active {
+    background-color: rgb(3, 0, 32);
+    color: aliceblue;
+}
+
+header #ul li a:hover {
+    color: aqua;
+}
+
+@media screen and (max-width: 987px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+#home-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
+    background-color: rgb(211, 211, 211);
+}
+
+#home-content .home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+}
+
+#home-content .home-content .number {
+    font-size: 5rem;
+    color: rgb(3, 0, 32);
+}
+
+#home-content .home-content .text {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#home-img-div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
+    background-color: rgb(211, 211, 211);
+
+}
+
+#home-img-div img {
+    width: 20%;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid transparent;
+    transition: border 300ms;
+}
+
+#home-img-div img:hover {
+    border: 3px solid rgb(3, 0, 32);
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: aliceblue;
+    background-color: rgb(3, 0, 32);
+    border: none;
+    margin: 10px;
+
+}
+
+footer {
+    font-size: 1.6rem;
+    color: aliceblue;
+    background-color: rgb(3, 0, 32);
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#about {
+    display: flex;
+    font-size: 1.7rem;
+    padding: 60px;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+#about p {
+    text-align: start;
+}
+
+#about img {
+    box-shadow: 0 0 35px 1px rgb(3, 0, 32);
+}
+
+#form {
+    display: flex;
+}
+
+form {
+    background-color: rgb(3, 0, 32);
+    padding: 60px;
+    text-align: start;
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    margin: 0;
+}
+
+form label {
+    font-size: 1.5rem;
+    color: aliceblue;
+    margin: 20px 20px 20px 0;
+}
+
+form input,
+textarea {
+    padding: 15px 10px;
+    border: none;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+form textarea {
+    min-width: 400px;
+    min-height: 300px;
+    resize: none;
+}
+
+
+form input[type='submit'] {
+    padding: 15px 30px;
+}
+
+
+#location {
+    display: inline-flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#location h3 {
+    margin: 30px 0;
+    font-size: 3rem;
+}
+
+#location p {
+    margin: 30px 0;
+    font-size: 1.5rem;
+}
+
+#location a {
+    font-size: 1.3rem;
+    display: inline-block;
+    text-decoration: none;
+}
